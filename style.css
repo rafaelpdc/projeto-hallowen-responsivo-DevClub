@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* transition: .3s ease; */
+}body{
+    background: linear-gradient(
+        136.16deg,
+        rgba(91, 135, 75, 0.97) 12.91%,
+        rgba(12, 55,32, 0.87) 87.68%);
+        width: 100%;
+        min-height: 100vh;
+        padding: 12px 60px;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.underline{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+.underline:after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    left: 0px;
+    position: absolute;
+    background-color: white;
+    transition: .33s ease;
+}
+.nav_link:hover:after{
+    width: 100%;
+}
+
+.nav_link:active{
+    opacity: .4;
+}
+.btn_link{
+    border: 1px solid #F8F8FD;
+    border-radius: 40px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .33s;
+
+}
+.btn_link:hover{
+    opacity: 0.5;
+}
+
+.maior{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.menor{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 219px;
+
+}
+.container_left{
+    width: 50%;
+    height: 450px;
+    position: relative;
+}
+.container_left img{
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+    left: -50px;
+}
+.container_left_info{
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    padding-right:20px;
+    border-right: 2px solid #a7de93;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 85px;
+}
+.container_left_info::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #a7de93;
+    position: absolute;
+    right: -7px;
+    top: -11px;
+
+}
+.container_left p:first-child{
+    font-size: 20px;
+    font-weight: 700;
+}
+.container_left p:last-child{
+    font-size: 16px;
+    font-weight: 400;
+}
+h3{
+    color: var(--Light, #F8F8FD);
+    font-size: 20px;
+    font-weight: 700;
+}
+.container_rigth p:first-child{
+    color: #FFF;
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 109%;
+    /* width: 445px; */
+    /* height: auto; */
+    
+}
+.container_rigth p:last-child{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 180%;
+    /* width: 445px; */
+    /* height: auto; */
+}
+.container_rigth{
+   width: 420px;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+
+}
+.container_rigth p:last-child{
+    margin-top: 24px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: .6;
+}
+.container_action{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.container_action button{
+    color: #303056;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    background-image:url(assets/Rectangle\ 9.svg);
+    background-color: transparent;
+    border:none;
+    padding: 29px 43px;
+    cursor: pointer;
+    }
+    .container_action button:hover{
+        opacity: 0.8;
+        color: #fff;
+        transition: .3s;
+    }
+
+.container_action button:active{
+    opacity: 0.4;
+    color: #fff;
+}
+    .container_action a{
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        transition: .3s;
+    
+    }
+    .container_action a:hover{
+        opacity: .5;
+    }
+    .btn_ghost{
+        display: block;
+        margin: 12px auto;
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: transparent;
+        background-image: url(assets/Btn.svg);
+        padding: 34px 43px;
+        border: none;
+        cursor: pointer;
+    }
+    .btn_ghost:hover{
+        color: #303056;
+        transition: .3s;
+
+    }
+    
+    .btn_ghost:active{
+        color: #d31717;
+        transition: .3s;
+
+    }
+    
+    @media(max-width: 900px){
+        body{
+            padding: 12px 34px;
+            overflow: hidden;
+        }
+        nav{
+            display: none;
+        }
+        section{
+            flex-direction: column;
+            margin-top: 1px;
+        }
+        .container_left{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .container_left_info{
+            left: auto;
+        }
+        .container_left img{
+            left: 0;
+            width: 87%;
+        }
+        .container_rigth{
+            width: 100%;
+            text-align: center;
+        }
+        .container_rigth p:first-child{
+            font-size: 30px;
+        }
+        .container_rigth p:last-child{
+            display: none;
+        }
+    }
+
+
+
+
