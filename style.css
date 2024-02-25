@@ -218,7 +218,7 @@ h3{
     }
     
     .btn_ghost:active{
-        color: #d31717;
+        color: #d31717e9;
         transition: .3s;
 
     }
