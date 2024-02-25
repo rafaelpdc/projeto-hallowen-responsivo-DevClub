@@ -239,6 +239,7 @@ h3{
             width: 100%;
             display: flex;
             justify-content: center;
+            height: 414px;
         }
         .container_left_info{
             left: auto;
@@ -257,7 +258,7 @@ h3{
         .container_rigth p:last-child{
             display: none;
         }
-        .btn_ghost{
+        .btn_ghostt{
             display: none;
         }
     }
